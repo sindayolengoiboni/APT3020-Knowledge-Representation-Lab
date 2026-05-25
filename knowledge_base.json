@@ -1,0 +1,58 @@
+{
+  "symptoms": [
+    "fever",
+    "headache",
+    "cough",
+    "chest_pain",
+    "sneezing",
+    "runny_nose",
+    "fatigue",
+    "sore_throat",
+    "vomiting",
+    "diarrhea"
+  ],
+  "diseases": [
+    {
+      "name": "Malaria",
+      "description": "A parasitic disease transmitted by mosquitoes"
+    },
+    {
+      "name": "Pneumonia",
+      "description": "A lung infection that inflames air sacs"
+    },
+    {
+      "name": "Flu",
+      "description": "A viral infection of the respiratory system"
+    },
+    {
+      "name": "Food Poisoning",
+      "description": "An illness caused by contaminated food or water"
+    }
+  ],
+  "rules": [
+    {
+      "id": 1,
+      "disease": "Malaria",
+      "symptoms_required": ["fever", "headache", "fatigue"],
+      "confidence": 0.85
+    },
+    {
+      "id": 2,
+      "disease": "Pneumonia",
+      "symptoms_required": ["cough", "chest_pain", "fatigue"],
+      "confidence": 0.80
+    },
+    {
+      "id": 3,
+      "disease": "Flu",
+      "symptoms_required": ["sneezing", "runny_nose", "sore_throat"],
+      "confidence": 0.75
+    },
+    {
+      "id": 4,
+      "disease": "Food Poisoning",
+      "symptoms_required": ["vomiting", "diarrhea", "fatigue"],
+      "confidence": 0.70
+    }
+  ]
+}
